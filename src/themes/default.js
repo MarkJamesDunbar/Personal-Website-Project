@@ -1,7 +1,7 @@
 export default {
   // Temp fonts
   fonts: {
-    title: "Space Grotesk, sans-serif",
+    title: "Permanent Marker",
     main: "Space Grotesk, sans-serif",
     structure: "La Belle Aurore"
   },

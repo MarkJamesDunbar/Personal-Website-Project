@@ -1,17 +1,17 @@
-import Projects from '../components/Projects/Projects';
+import TimeLine from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Structure } from '../styles/GlobalComponents';
 
-const ProjectsPage = () => {
+const TechPage = () => {
   return (
     <Layout>
         <Structure>&lt;html&gt;<br/></Structure>
         <Structure indent>&lt;body&gt;<br/><br/></Structure>
-        <Projects/>
+        <TimeLine/>
         <Structure indent>&lt;/body&gt;<br/></Structure>
         <Structure>&lt;/html&gt;</Structure>
     </Layout>
   );
 };
 
-export default ProjectsPage;
+export default TechPage;

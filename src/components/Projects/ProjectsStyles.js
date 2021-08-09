@@ -13,6 +13,7 @@ grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 padding: 3rem;
 overflow: hidden;
 position: relative;
+display: grid;
 place-items: center;
 column-gap: 2rem;
 row-gap: 3rem;

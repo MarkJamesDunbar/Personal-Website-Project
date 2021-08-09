@@ -33,6 +33,8 @@ export default class MyDocument extends Document {
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
           <link href="//fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet" type="text/css" />
+          <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600;700&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <Main />

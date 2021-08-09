@@ -22,6 +22,9 @@ const GlobalStyles = createGlobalStyle`
     cursor: default;
 
   }
+  main {
+    height: 100vh;
+  }
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${props => props.theme.fonts.title};
   }
@@ -31,7 +34,20 @@ const GlobalStyles = createGlobalStyle`
   li{
     list-style: none;
   }
-
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1d1d1d;
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#515152, #515152);
+    opacity: 0.05;
+    border-radius: 10px;
+    border: 2px;
+    width: 10px;
+  }
 `;
 
 export default GlobalStyles;

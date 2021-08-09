@@ -1,20 +1,34 @@
 import styled from 'styled-components'
 
+
+export const SidebarWrapper = styled.section`
+  display: ${(props) => props.grid ? "grid" : "flex" };
+  align-items: ${(props) => props.middle ? "center" : "strech"};
+  position: sticky;
+  padding-top: 0;             
+  margin: 0;
+  min-width: 100%;
+  height: 100vh;
+  grid-template-columns: 300px calc(100vw - 300px);
+`
+
+
 export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
-  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" };
+  padding: ${(props) => props.nopadding ? "0" : "8rem" };
   align-items: ${(props) => props.middle ? "center" : "strech"};
   padding-top: ${(props) => props.middle ? "0" : "32px"};
-  margin: 0 auto;
+  padding-left: ${(props) => props.paddingleft ? "0" : "32px"};
+  margin: 0;
   justify-content: center;
-  max-width: 1400px;
-  min-height: calc(100vh - 100px);
+  max-width: 100vw;
+  min-height: ${(props) => props.main ? "calc(100vh - 80px);" : "80vh"};
   box-sizing: content-box;
   position: relative;
   vertical-align: middle;
   overflow: hidden;
-  overflow-y: visible;
+  overflow-y: ${(props) => props.paddingleft ? "hidden" : "visible"};
   grid-template-columns: 1fr 1fr;
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
@@ -29,22 +43,40 @@ export const Section = styled.section`
   }
 `
 
+export const Block = styled.div`
+  margin:0;
+  padding-top: 24rem;
+`
+
+export const Box2 = styled.div`
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+
+`;
+
 export const Structure = styled.span`
   font-size: 2rem;
   font-family: La Belle Aurore;
   color: #515152;
+  
   ${(props) => {
     if (props.indent) {
       return `
-        padding: 4rem;
+        padding-left: 4rem;
     `
     } else if (props.indent2) {
       return `
-        padding: 8rem;
+        padding-left: 8rem;
     `
+    } else if (props.indent3) {
+      return `
+        padding-left: 12rem;
+    `
+
     } else {
       return `
-        padding: 0rem;
+        padding-left: 0rem;
     `
     }
   }}
@@ -54,15 +86,17 @@ export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
-  width: max-content;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: fit-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+;
+  background: linear-gradient(to right top, #6b3d91, #813993, #963492, #ab2c8e, #bf2188, #d0157f, #de0674, #eb0068, #f60456, #fd1b42, #ff322a, #ff4700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   margin-left: ${(props) => props.struct ? '20px' : '0'};
   margin-bottom: ${(props) => props.struct ? '0' : '16px'};
-
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
     line-height: ${(props) => props.main ? '56px' : '48px'};
@@ -83,7 +117,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 800px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
@@ -104,28 +138,6 @@ export const SectionText = styled.p`
   }
 `
 
-export const SectionDivider = styled.div`
-
-  width: 64px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: #fff;
-  background: ${(props) => props.colorAlt ? 
-    'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
-    'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
-
-    margin: ${(props) => props.divider ? "4rem 0" : "" };
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
-    height: 4px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
-    height: 2px;
-  }
-`
 export const SectionSubText = styled.p`
   max-width: 800px;
   font-weight: 300;

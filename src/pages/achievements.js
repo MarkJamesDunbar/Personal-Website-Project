@@ -1,17 +1,17 @@
-import Projects from '../components/Projects/Projects';
+import Achievements from '../components/Achievements/Achievements';
 import { Layout } from '../layout/Layout';
 import { Structure } from '../styles/GlobalComponents';
 
-const ProjectsPage = () => {
+const AchievementsPage = () => {
   return (
     <Layout>
         <Structure>&lt;html&gt;<br/></Structure>
         <Structure indent>&lt;body&gt;<br/><br/></Structure>
-        <Projects/>
+        <Achievements/>
         <Structure indent>&lt;/body&gt;<br/></Structure>
         <Structure>&lt;/html&gt;</Structure>
     </Layout>
   );
 };
 
-export default ProjectsPage;
+export default AchievementsPage;

@@ -5,11 +5,14 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 
 const Technologies = () =>  (
   <Section id="tech">
-    <SectionDivider/>
-    <SectionTitle main>Technologies</SectionTitle>
-    <SectionText>
-      I've worked with a range of techologies in the web development world. From Back-End To Design
-    </SectionText>
+    <Structure>&lt;h1&gt;</Structure>
+      <SectionTitle main struct>Technologies.</SectionTitle>
+    <Structure>&lt;/h1&gt;</Structure>
+    <Structure>&lt;p&gt;</Structure>
+      <SectionText struct>
+        I've worked with a range of techologies in the web development world. From Back-End To Design
+      </SectionText>
+    <Structure>&lt;/p&gt;</Structure>
     <List>
       <ListItem>
         <DiReact size="3rem"/>
