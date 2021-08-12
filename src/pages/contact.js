@@ -14,11 +14,13 @@ const ContactPage = () => {
   return (
     <Layout>
 
-        <Section nopadding nomargin grid middle paddingleft>
+        <Section nopadding nomargin grid middle paddingleft contact>
           <Box2>
            <Structure>&lt;html&gt;<br/></Structure>
            <Structure indent>&lt;body&gt;<br/><br/></Structure>
            <Contact />
+           <Structure indent>&lt;/body&gt;<br/></Structure>
+        <Structure>&lt;/html&gt;</Structure>
           </Box2>
 
           <WrappedMap googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`} 
@@ -27,8 +29,7 @@ const ContactPage = () => {
           mapElement={<div style={{height: '100%'}} />}
           />
         </Section>
-        <Structure indent>&lt;/body&gt;<br/></Structure>
-        <Structure>&lt;/html&gt;</Structure>
+        
 
     </Layout>
   );

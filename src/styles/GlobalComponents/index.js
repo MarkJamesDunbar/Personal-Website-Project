@@ -7,11 +7,10 @@ export const SidebarWrapper = styled.section`
   position: sticky;
   padding-top: 0;             
   margin: 0;
-  min-width: 100%;
+  min-width: 100vw;
   height: 100vh;
   grid-template-columns: 300px calc(100vw - 300px);
 `
-
 
 export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
@@ -19,17 +18,30 @@ export const Section = styled.section`
   padding: ${(props) => props.nopadding ? "0" : "8rem" };
   align-items: ${(props) => props.middle ? "center" : "strech"};
   padding-top: ${(props) => props.middle ? "0" : "32px"};
-  padding-left: ${(props) => props.paddingleft ? "0" : "32px"};
+  min-height: ${(props) => props.main ? "calc(100vh - 115px);" : "80vh"};
+  padding-bottom: 0;
   margin: 0;
   justify-content: center;
   max-width: 100vw;
-  min-height: ${(props) => props.main ? "calc(100vh - 80px);" : "80vh"};
   box-sizing: content-box;
   position: relative;
   vertical-align: middle;
   overflow: hidden;
-  overflow-y: ${(props) => props.paddingleft ? "hidden" : "visible"};
   grid-template-columns: 1fr 1fr;
+  ${(props) => {
+    if (props.indent) {
+      return `
+        padding-left: 4rem;
+    `
+    }
+    else if (props.paddingleft) {
+      return `
+        padding-left: 0;
+        overflow-y: hidden;
+    `
+    }
+  }}
+
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;

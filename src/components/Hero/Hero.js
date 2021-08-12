@@ -4,7 +4,7 @@ import { Section, SectionText, SectionTitle, Structure } from '../../styles/Glob
 import { LeftSection } from './HeroStyles';
 
 const Hero = () => (
-  <Section row middle>
+  <Section row middle paddingleft>
     <LeftSection>
       <Structure>&lt;h1&gt;</Structure>
       <SectionTitle main center struct >

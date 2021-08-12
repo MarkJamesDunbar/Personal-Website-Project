@@ -8,7 +8,7 @@ const HomePage = () => {
     <Layout>
         <Structure>&lt;html&gt;<br/></Structure>
         <Structure indent>&lt;body&gt;<br/><br/></Structure>
-        <Section nopadding nomargin grid middle>
+        <Section nopadding nomargin grid middle indent>
           <Hero />
           <BgAnimation />
         </Section>

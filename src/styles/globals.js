@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
   }
   main {
     height: 100vh;
+    width: calc(100vw - 300px);
   }
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${props => props.theme.fonts.title};
