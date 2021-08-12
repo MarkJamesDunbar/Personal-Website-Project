@@ -12,13 +12,20 @@ export const SidebarWrapper = styled.section`
   grid-template-columns: 300px calc(100vw - 300px);
 `
 
+export const ScrollContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+`
+
 export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "8rem" };
   align-items: ${(props) => props.middle ? "center" : "strech"};
-  padding-top: ${(props) => props.middle ? "0" : "32px"};
-  min-height: ${(props) => props.main ? "calc(100vh - 115px);" : "80vh"};
+  padding-top: ${(props) => props.nopaddingtop ? "0" : "32px"};
+  min-height: ${(props) => props.main ? "calc(100vh - 115px);" : "87vh"};
+
   padding-bottom: 0;
   margin: 0;
   justify-content: center;
@@ -29,15 +36,44 @@ export const Section = styled.section`
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
   ${(props) => {
-    if (props.indent) {
+    if (props.indentbase) {
       return `
-        padding-left: 4rem;
+        padding-left: 2.5rem;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
     `
     }
     else if (props.paddingleft) {
       return `
         padding-left: 0;
         overflow-y: hidden;
+    `
+    }
+    else if (props.contact) {
+      return `
+        padding-left: 0;
+        overflow-y: hidden;
+        min-height: calc(100vh - 150px);
+    `
+    } else if (props.indent) {
+      return `
+        padding-left: 4rem;
+        min-height: calc(100vh - 180px);
+    `
+    } else if (props.main) {
+      return `
+        padding-left: 0;
+        overflow-y: scroll;
+        min-height: calc(100vh - 50px);
+    `
+    }
+    else if (props.page) {
+      return `
+        padding-left: 0;
+        overflow-y: scroll;
+        min-height: calc(100vh - 100px);
     `
     }
   }}
@@ -67,10 +103,12 @@ export const Box2 = styled.div`
 
 `;
 
-export const Structure = styled.span`
+export const Structure = styled.div`
   font-size: 2rem;
   font-family: La Belle Aurore;
   color: #515152;
+  padding-top: ${(props) => props.vindent ? '2rem' : '0'};
+  padding-bottom: ${(props) => props.vbindent ? '2rem' : '0'};
   
   ${(props) => {
     if (props.indent) {
@@ -85,7 +123,6 @@ export const Structure = styled.span`
       return `
         padding-left: 12rem;
     `
-
     } else {
       return `
         padding-left: 0rem;

@@ -6,14 +6,16 @@ import { Section, Structure } from '../styles/GlobalComponents';
 const HomePage = () => {
   return (
     <Layout>
-        <Structure>&lt;html&gt;<br/></Structure>
+      <Section indentbase>
+        <Structure vindent>&lt;html&gt;<br/></Structure>
         <Structure indent>&lt;body&gt;<br/><br/></Structure>
-        <Section nopadding nomargin grid middle indent>
+        <Section nopadding nomargin grid middle page indent>
           <Hero />
           <BgAnimation />
         </Section>
         <Structure indent>&lt;/body&gt;<br/></Structure>
-        <Structure>&lt;/html&gt;</Structure>
+        <Structure vbindent>&lt;/html&gt;</Structure>
+      </Section>
     </Layout>
   );
 };

@@ -12,11 +12,10 @@ const data = [
 ];
 
 const Acomplishments = () => (
-  <Section nopadding>
-    <FooterWrapper>
-      <Structure indent2>&lt;h1&gt;</Structure>
-      <SectionTitle main> Personal Achievements. </SectionTitle>
-      <Structure indent2>&lt;/h1&gt;</Structure>
+  <Section nopaddingtop>
+      <Structure>&lt;h1&gt;</Structure>
+      <SectionTitle main struct> Personal <br/> Achievements. </SectionTitle>
+      <Structure>&lt;/h1&gt;</Structure>
       <Boxes>
         {data.map((card, index) => (
           <Box key={index}>
@@ -25,7 +24,6 @@ const Acomplishments = () => (
           </Box>
         ))}
       </Boxes>
-    </FooterWrapper> 
   </Section>
   
 );

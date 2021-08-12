@@ -1,15 +1,17 @@
 import TimeLine from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
-import { Structure } from '../styles/GlobalComponents';
+import { Structure, Section } from '../styles/GlobalComponents';
 
 const TechPage = () => {
   return (
     <Layout>
-        <Structure>&lt;html&gt;<br/></Structure>
+      <Section indentbase>
+        <Structure vindent>&lt;html&gt;<br/></Structure>
         <Structure indent>&lt;body&gt;<br/><br/></Structure>
         <TimeLine/>
         <Structure indent>&lt;/body&gt;<br/></Structure>
-        <Structure>&lt;/html&gt;</Structure>
+        <Structure vbindent>&lt;/html&gt;</Structure>
+      </Section>
     </Layout>
   );
 };

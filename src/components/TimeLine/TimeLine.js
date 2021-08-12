@@ -43,7 +43,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
+    <Section id="about" nopaddingtop>
         <Structure>&lt;h1&gt;</Structure>
           <SectionTitle main struct>My History.</SectionTitle>
         <Structure>&lt;/h1&gt;</Structure>

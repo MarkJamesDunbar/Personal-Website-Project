@@ -3,26 +3,26 @@ import { Section, SectionText, SectionTitle, Structure } from '../../styles/Glob
 import { LeftSection } from './ContactStyles';
 
 const Contact = () => (
-  <Section row middle main paddingleft>
-    <LeftSection>
+  <Section contact row middle main indent nopaddingtop>
+    <LeftSection indent>
     <Structure>&lt;h1&gt;</Structure>
-    <SectionTitle main center struct >
-        Me, Myself &&nbsp;I.  <br/>
+    <SectionTitle center struct >
+        Contact me.  <br/>
     </SectionTitle>
     <br/>
     <Structure>&lt;/h1&gt; <br/> <br/></Structure>
-    <Structure>&lt;p&gt;</Structure>
+    <Structure>&lt;form&gt;</Structure>
     <SectionText struct>
-        I’m a Web & Software Developer located in London, England. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+        form placeholder
         <br/>
         <br/>
-        A well-organised person, problem solver, independent employee with high attention to detail. Fan of Rock Climbing, outdoor activities,  and English literature.
+        form placeholder
         <br/>
         <br/>
-        Interested in the entire web-development spectrum and working on new, ambitious projects with positive, driven people.
+        form placeholder
     </SectionText>
     <br/>
-    <Structure>&lt;/p&gt;</Structure>
+    <Structure>&lt;/form&gt;</Structure>
     <br/>
     </LeftSection>
 

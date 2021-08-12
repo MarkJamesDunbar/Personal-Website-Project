@@ -5,7 +5,7 @@ import { Section, SectionTitle, Structure } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants';
 
 const Projects = () => (
-  <Section id="projects">
+  <Section id="projects" nopaddingtop>
     <Structure>&lt;h1&gt;</Structure>
     <SectionTitle main struct>Projects.</SectionTitle>
     <Structure>&lt;/h1&gt;</Structure>
