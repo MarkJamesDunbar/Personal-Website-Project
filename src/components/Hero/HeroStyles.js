@@ -1,4 +1,7 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { pulse } from 'react-animations';
+
+const pulseAnimation = keyframes`${pulse}`;
 
 export const LeftSection = styled.div`
   width: 100%;
@@ -19,3 +22,15 @@ export const LeftSection = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const Anchor = styled.a`
+  color: white;
+  font-size: 20pt;
+
+`;
+
+export const RDiv = styled.div`
+  &:hover{animation: 2s ${pulseAnimation};}
+`;
+
+  

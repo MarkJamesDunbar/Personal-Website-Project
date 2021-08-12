@@ -9,7 +9,7 @@ const HomePage = () => {
       <Section indentbase>
         <Structure vindent>&lt;html&gt;<br/></Structure>
         <Structure indent>&lt;body&gt;<br/><br/></Structure>
-        <Section nopadding nomargin grid middle page indent>
+        <Section nopaddingtop nomargin grid middle page indent >
           <Hero />
           <BgAnimation />
         </Section>

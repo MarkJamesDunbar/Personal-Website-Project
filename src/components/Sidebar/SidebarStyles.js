@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SidebarContainer = styled.div`
-  width: 300px;
+  width: 200px;
   background-color: #181818;
   display: flex;
   flex-direction: column;
@@ -9,23 +9,23 @@ export const SidebarContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   overflow: hidden;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 `
 
 export const SidebarList = styled.ul`
     height: auto;
     padding: 0;
-    width: 300px;
+    width: 200px;
 `;
 
 export const SidebarRow = styled.li`
     width: 100%;
-    height: 100px;
+    height: 80px;
     list-style-type: none;
     margin: 0;
     display: flex;

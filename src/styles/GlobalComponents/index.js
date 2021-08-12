@@ -9,7 +9,7 @@ export const SidebarWrapper = styled.section`
   margin: 0;
   min-width: 100vw;
   height: 100vh;
-  grid-template-columns: 300px calc(100vw - 300px);
+  grid-template-columns: 200px calc(100vw - 200px);
 `
 
 export const ScrollContainer = styled.div`

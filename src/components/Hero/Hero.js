@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Section, SectionText, SectionTitle, Structure } from '../../styles/GlobalComponents';
-import { LeftSection } from './HeroStyles';
+import { LeftSection, Anchor, RDiv } from './HeroStyles';
 
 const Hero = () => (
   <Section row middle paddingleft nopaddingtop>
@@ -21,6 +21,8 @@ const Hero = () => (
         <br/>
         <br/>
         Interested in the entire web-development spectrum and working on new, ambitious projects with positive, driven people.
+        <br/>
+        <br/>
       </SectionText>
       <br/>
       <Structure>&lt;/p&gt;</Structure>
