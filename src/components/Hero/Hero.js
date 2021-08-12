@@ -1,13 +1,12 @@
 import React from 'react';
-
 import { Section, SectionText, SectionTitle, Structure } from '../../styles/GlobalComponents';
-import { LeftSection, Anchor, RDiv } from './HeroStyles';
+import { LeftSection } from './HeroStyles';
 
 const Hero = () => (
-  <Section row middle paddingleft nopaddingtop>
+  <Section contact row middle main indent nopaddingtop>
     <LeftSection indent>
       <Structure>&lt;h1&gt;</Structure>
-      <SectionTitle main center struct >
+      <SectionTitle center struct >
          Me, Myself &&nbsp;I.  <br/>
       </SectionTitle>
       <br/>
@@ -27,6 +26,7 @@ const Hero = () => (
       <br/>
       <Structure>&lt;/p&gt;</Structure>
     </LeftSection>
+
   </Section>
 );
 

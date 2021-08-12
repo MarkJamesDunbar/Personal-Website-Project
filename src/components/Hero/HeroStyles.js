@@ -5,6 +5,7 @@ const pulseAnimation = keyframes`${pulse}`;
 
 export const LeftSection = styled.div`
   width: 100%;
+  height: 100%;
   padding-left: ${(props) => props.indent ? "4rem" : "0" };
   
   @media ${(props) => props.theme.breakpoints.sm} {
