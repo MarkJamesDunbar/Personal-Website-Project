@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHome, FaFlask, FaProjectDiagram, FaHistory, FaInfo, FaTrophy, FaAddressCard } from 'react-icons/fa';
+import { FaHome, FaFlask, FaProjectDiagram, FaHistory, FaFeather, FaTrophy, FaAddressCard } from 'react-icons/fa';
 
 export const SidebarData = [
     {
@@ -24,7 +24,7 @@ export const SidebarData = [
     }
     ,{
         title: "Blog",
-        icon: <FaInfo/>,
+        icon: <FaFeather/>,
         link: '/blog'
     }
     ,{

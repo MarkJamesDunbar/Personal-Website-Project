@@ -1,7 +1,9 @@
-import { useRouter } from 'next/router';
 import React from 'react';
-import { SidebarContainer, SidebarList, SidebarRow, SidebarIcon, SidebarTitle, Img } from './SidebarStyles';
+import { useRouter } from 'next/router';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { SidebarContainer, SidebarList, SidebarRow, SidebarIcon, SidebarTitle, Img, SocialContainer, Spacer, SocialIcons } from './SidebarStyles';
 import {SidebarData} from './SidebarData';
+
 
 
 function Sidebar() {
@@ -9,6 +11,8 @@ function Sidebar() {
     return(
         <SidebarContainer>
             <Img src = '/images/sidebarlogo.png'/>
+            
+            
             <SidebarList>
                 {SidebarData.map((val, key) => {
                     return(
@@ -19,6 +23,21 @@ function Sidebar() {
                     )
                 })}
             </SidebarList>
+            <Spacer/>
+            <SocialContainer>
+                <SocialIcons href="https://github.com/MerkuMerku">
+                    <AiFillGithub size="3rem" />
+                </SocialIcons>
+                <SocialIcons href="https://www.linkedin.com/in/mark-dunbar-17a426152/">
+                    <AiFillLinkedin size="3rem" />
+                </SocialIcons>
+                <SocialIcons href="https://www.instagram.com/merkumerk/">
+                    <AiFillInstagram size="3rem" />
+                </SocialIcons>
+            </SocialContainer>
+
+            
+
         </SidebarContainer>
     )
 }

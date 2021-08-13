@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle, Structure } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle, Structure } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
@@ -35,6 +35,7 @@ const Technologies = () =>  (
           <ListParagraph>
             Experience with <br/>
             Node.js
+            Flask
             Databases
           </ListParagraph>
         </ListContainer>
@@ -43,11 +44,11 @@ const Technologies = () =>  (
         <DiZend size="3rem"/>
         <ListContainer>
           <ListTitle>
-            UI/UX
+            Data Handling
           </ListTitle>
           <ListParagraph>
             Experience with <br/>
-            tools like Figma
+            Python
           </ListParagraph>
         </ListContainer>
       </ListItem>

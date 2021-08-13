@@ -1,24 +1,24 @@
 export const projects = [
   {
-    title: 'MERN Memories',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
+    title: 'Covi-Tracker',
+    description: "This project uses Python to build a full-stack Covid-19 data tracking app. The front-end for this application uses Flask, ChartJS and Bootstrap to create a simple, user friendly web application. The back-end for this app, also build in Python collects, cleans and stores up-to-date Covid-19 data using beautifulsoup, pandas and sqlite3.",
     image: '/images/1.png',
-    tags: ['Mongo', 'Express', 'React', 'Node'],
+    tags: ['Python', 'Flask', 'Bootstrap', 'SQL'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 0,
   },
   {
-    title: 'E-Commerce',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+    title: 'Flask Blog App',
+    description:"This app explores the concept of a simple, fully-stacked blogging app like twitter. Built in Python Flask, this app handles user registration, login and password-reset processes, as well as user content creation. SQL query handling and hashed secure password handling are demonstrated in this project.",
     image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
+    tags: ['Python', 'Flask', 'Bootstrap', 'SQL'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 1,
   },
   {
-    title: 'WebRTC App',
+    title: 'ReactJS Portfolio Template',
     description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
       image: '/images/3.jpg',
       tags: ['React', 'WebRTC'],
@@ -46,3 +46,33 @@ export const TimeLineData = [
   { year: 'Jun 2021', text: 'Built my first Flask App - a Covid-19 data tracking website', },
   { year: 'Sept 2021', text: 'Started a postgraduate MSc in Big Data Science at the Queen Mary University of London', },
 ];
+
+export const options = {
+			animationEnabled: true,
+			theme: "light2",
+			title:{
+				text: "Most Popular Social Networking Sites"
+			},
+			axisX: {
+				title: "Social Network",
+				reversed: true,
+			},
+			axisY: {
+				title: "Monthly Active Users",
+				includeZero: true,
+				labelFormatter : this.addSymbols
+			},
+			data: [{
+				type: "bar",
+				dataPoints: [
+					{ y:  2200000000, label: "Facebook" },
+					{ y:  1800000000, label: "YouTube" },
+					{ y:  800000000, label: "Instagram" },
+					{ y:  563000000, label: "Qzone" },
+					{ y:  376000000, label: "Weibo" },
+					{ y:  336000000, label: "Twitter" },
+					{ y:  330000000, label: "Reddit" }
+				]
+			}]
+		}
+		

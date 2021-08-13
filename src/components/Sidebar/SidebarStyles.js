@@ -14,7 +14,7 @@ export const Img = styled.img`
   object-fit: cover;
   overflow: hidden;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 `
 
 export const SidebarList = styled.ul`
@@ -53,3 +53,39 @@ export const SidebarTitle = styled.div`
     flex: 70%;
     font-size: 13pt;
 `;
+
+export const SocialIcons = styled.a`
+    font-size: 10pt;
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 50px;
+    padding: 8px;
+    &:hover {
+        background-color: #515152;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+`
+
+export const Spacer = styled.div`
+width: 100%;
+height: 40rem;
+`
+
+
+export const SocialContainer = styled.div`
+    
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+	@media ${props => props.theme.breakpoints.md}{
+		justify-content: center;
+		padding-right: 16px;
+		flex-wrap: wrap;
+	}
+`
+
+
+
+

@@ -1,7 +1,5 @@
 import React from 'react';
-
 import { Section, SectionTitle, Structure } from '../../styles/GlobalComponents';
-import { FooterWrapper } from '../Footer/FooterStyles';
 import { Box, Boxes, BoxNum, BoxText } from './AchievementsStyles';
 
 const data = [
