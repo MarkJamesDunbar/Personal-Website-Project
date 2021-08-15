@@ -27,11 +27,18 @@ export const LeftSection = styled.div`
 export const Anchor = styled.a`
   color: white;
   font-size: 20pt;
-
+  
 `;
 
-export const RDiv = styled.div`
-  &:hover{animation: 2s ${pulseAnimation};}
+export const Letter = styled.span`
+  position: relative;
+  
+  &:hover {
+      transform: translate(0%, -30%);
+      transition: 0.3s ease-out;
+    }
 `;
+
+
 
   

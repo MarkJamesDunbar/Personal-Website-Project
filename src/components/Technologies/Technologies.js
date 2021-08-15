@@ -10,7 +10,7 @@ const Technologies = () =>  (
     <Structure>&lt;/h1&gt;</Structure>
     <Structure>&lt;p&gt;</Structure>
       <SectionText struct>
-        I've worked with a range of techologies in the web development world. From Back-End To Design
+        I've worked with a range of techologies in the web development world. From Back-End To Design...
       </SectionText>
     <Structure>&lt;/p&gt;</Structure>
     <List>
@@ -21,8 +21,15 @@ const Technologies = () =>  (
             Front-End
           </ListTitle>
           <ListParagraph>
-            Experience with <br/>
             React.js
+            <br/>
+            Bootstrap
+            <br/>
+            CSS 
+            <br/>
+            Html 5
+            <br/>
+            
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -33,10 +40,12 @@ const Technologies = () =>  (
             Back-End
           </ListTitle>
           <ListParagraph>
-            Experience with <br/>
-            Node.js
+            
+            NodeJS
+            <br/>
             Flask
-            Databases
+            <br/>
+            NextJS
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -47,8 +56,13 @@ const Technologies = () =>  (
             Data Handling
           </ListTitle>
           <ListParagraph>
-            Experience with <br/>
-            Python
+            Apache Airflow
+            <br/>
+            SQL
+            <br/>
+            GraphQL
+
+
           </ListParagraph>
         </ListContainer>
       </ListItem>

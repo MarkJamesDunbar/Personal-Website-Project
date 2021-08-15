@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 export const CarouselContainer = styled.ul`
-  max-width: 1040px;
+  max-width: 75vw;
   background: #1d1d1d;
   padding: 0rem;
   list-style: none;
@@ -15,7 +15,9 @@ export const CarouselContainer = styled.ul`
     margin-left: 20px;
   }
 
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 
   //remove scrollbar
   scrollbar-width: none;  
@@ -35,7 +37,8 @@ export const CarouselContainer = styled.ul`
 export const CarouselMobileScrollNode = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;
-    min-width: ${({ final }) => final ? `120%;` : `min-content`}
+    justify-content: space-between;
+    min-width: ${({ final }) => final ? `150%;` : `min-content`}
   }
 `
 

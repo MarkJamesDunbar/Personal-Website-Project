@@ -45,18 +45,19 @@ const Timeline = () => {
   return (
     <Section id="about" nopaddingtop>
         <Structure>&lt;h1&gt;</Structure>
-          <SectionTitle main struct>My History.</SectionTitle>
+        <SectionTitle main struct>My History.</SectionTitle>
         <Structure>&lt;/h1&gt;</Structure>
+        <br/>
         <Structure>&lt;p&gt;</Structure>
         <SectionText struct>
-          The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+          From physics & data science, to web development and testing, I hold a rich and varied taste of the coding world... 
         </SectionText>
         <Structure>&lt;/p&gt;</Structure>
 
         <Block>
 
         </Block>
-
+        <Structure>&lt;ul&gt;</Structure>
         <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
           <>
             {TimeLineData.map((item, index) => (
@@ -106,6 +107,7 @@ const Timeline = () => {
             ))}
           </>
         </CarouselContainer>
+        <Structure>&lt;/ul&gt;</Structure>
         <CarouselButtons>
           {TimeLineData.map((item, index) => (
             <CarouselButton 

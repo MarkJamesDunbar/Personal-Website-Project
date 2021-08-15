@@ -3,9 +3,13 @@ import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation'
 import { Layout } from '../layout/Layout';
 import { Section, Structure, Box2 } from '../styles/GlobalComponents';
 import { options } from '../constants/constants';
-import CanvasJSReact from './canvasjs.react';
-//var CanvasJSReact = require('./canvasjs.react');
-var  CanvasJSChart = CanvasJSReact.CanvasJSChart;
+//import CanvasJSReact from '../assets/canvasjs.react';
+// var CanvasJSReact = require('../assets/canvasjs.react');
+// var  CanvasJS = CanvasJSReact.CanvasJS;
+// var  CanvasJSChart = CanvasJSReact.CanvasJSChart;
+// const StockChart = dynamic(() => import("./Chart/StockChart"), { ssr: false });
+
+
 
 
 const TestPage = () => {
@@ -21,7 +25,7 @@ const TestPage = () => {
            <Structure>&lt;/html&gt;</Structure> 
         </Box2>
         
-        <CanvasJSChart options = {options}/>
+
 
       </Section>
     </Layout>

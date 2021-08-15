@@ -44,7 +44,7 @@ export const TimeLineData = [
   { year: 'Aug 2019', text: 'Achieved the IBM Data Science Professional certificate', },
   { year: 'Feb 2021', text: 'Developed my first React app', },
   { year: 'Jun 2021', text: 'Built my first Flask App - a Covid-19 data tracking website', },
-  { year: 'Sept 2021', text: 'Started a postgraduate MSc in Big Data Science at the Queen Mary University of London', },
+  { year: 'Sept 2021', text: 'Began a postgraduate MSc in Data Science at Queen Mary University, London', },
 ];
 
 export const options = {
@@ -59,9 +59,7 @@ export const options = {
 			},
 			axisY: {
 				title: "Monthly Active Users",
-				includeZero: true,
-				labelFormatter : this.addSymbols
-			},
+				includeZero: true,			},
 			data: [{
 				type: "bar",
 				dataPoints: [
