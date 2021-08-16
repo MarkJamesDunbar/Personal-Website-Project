@@ -1,7 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { pulse } from 'react-animations';
-
-const pulseAnimation = keyframes`${pulse}`;
 
 export const LeftSection = styled.div`
   width: 100%;
@@ -25,20 +22,20 @@ export const LeftSection = styled.div`
 `;
 
 export const Anchor = styled.a`
+  
   color: white;
   font-size: 20pt;
   
 `;
 
 export const Letter = styled.span`
-  position: relative;
-  
-  &:hover {
-      transform: translate(0%, -30%);
-      transition: 0.3s ease-out;
-    }
-`;
+  transition: 0.6s ease;
+  color: white;
+  display: inline-block;
+  & :hover{
+    transform: scale(1.5);
+  }
+`
 
 
-
-  
+        
