@@ -1,7 +1,8 @@
 import React from 'react';
 import { Section, SectionText, SectionTitle, Structure } from '../../styles/GlobalComponents';
+import TextAnimation from '../../styles/GlobalComponents/TextAnimation';
 import { LeftSection } from './TestStyles';
-import { options } from '../../constants/constants';
+import {motion} from 'framer-motion';
 
 
 const Test = () => (
@@ -9,16 +10,16 @@ const Test = () => (
     <LeftSection indent>
       <Structure>&lt;h1&gt;</Structure>
       <SectionTitle center struct >
-         TESTPAGE.  <br/>
+        Test Page!
       </SectionTitle>
-      <br/>
       <Structure>&lt;/h1&gt; <br/> <br/></Structure>
       <Structure>&lt;p&gt;</Structure>
+      
       <SectionText struct>
         TEST
         <br/>
         <br/>
-        TEST
+        <TextAnimation/>
         <br/>
         <br/>
         TEST

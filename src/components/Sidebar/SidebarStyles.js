@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SidebarContainer = styled.div`
-  width: 200px;
+  width: 225px;
   background-color: #181818;
   display: flex;
   flex-direction: column;
@@ -9,10 +9,10 @@ export const SidebarContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 200px;
+  width: 225px;
   height: 200px;
   object-fit: cover;
-  overflow: hidden;
+  overflow: none;
   margin-top: 30px;
   margin-bottom: 70px;
 `
@@ -20,13 +20,14 @@ export const Img = styled.img`
 export const SidebarList = styled.ul`
     height: auto;
     padding: 0;
-    width: 200px;
+    width: 225px;
 `;
 
 export const SidebarRow = styled.li`
     width: 100%;
-    height: 80px;
+    height: 6vh;
     list-style-type: none;
+    color: white;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -57,21 +58,26 @@ export const SidebarTitle = styled.div`
 export const SocialIcons = styled.a`
     font-size: 10pt;
     transition: 0.3s ease;
-    color: white;
+    color: rgba(255,255,255,0.5);
     border-radius: 50px;
     padding: 8px;
     &:hover {
-        background-color: #515152;
+        background-color: rgba(255,255,255,0.5);
+        color: #1d1d1d;
         transform: scale(1.2);
         cursor: pointer;
     }
 `
 
-export const Spacer = styled.div`
+export const Spacer2 = styled.div`
 width: 100%;
 height: 40rem;
 `
 
+export const Spacer1 = styled.div`
+width: 100%;
+height: 20rem;
+`
 
 export const SocialContainer = styled.div`
     

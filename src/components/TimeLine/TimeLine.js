@@ -46,17 +46,16 @@ const Timeline = () => {
     <Section id="about" nopaddingtop>
         <Structure>&lt;h1&gt;</Structure>
         <SectionTitle main struct>My History.</SectionTitle>
-        <Structure>&lt;/h1&gt;</Structure>
-        <br/>
+        <Structure>&lt;/h1&gt; <br/><br/><br/><br/></Structure>
+        
         <Structure>&lt;p&gt;</Structure>
         <SectionText struct>
           From physics & data science, to web development and testing, I hold a rich and varied taste of the coding world... 
         </SectionText>
         <Structure>&lt;/p&gt;</Structure>
 
-        <Block>
+        <Block/>
 
-        </Block>
         <Structure>&lt;ul&gt;</Structure>
         <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
           <>

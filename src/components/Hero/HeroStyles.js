@@ -22,20 +22,18 @@ export const LeftSection = styled.div`
 `;
 
 export const Anchor = styled.a`
-  
-  color: white;
+  background-color: red;
+  background-image: linear-gradient(to right top, #6b3d91, #813993, #963492, #ab2c8e, #bf2188, #d0157f, #de0674, #eb0068, #f60456, #fd1b42, #ff322a, #ff4700);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   font-size: 20pt;
-  
+  font-family: 'Permanent Marker';
 `;
 
-export const Letter = styled.span`
-  transition: 0.6s ease;
-  color: white;
-  display: inline-block;
-  & :hover{
-    transform: scale(1.5);
-  }
-`
 
 
         

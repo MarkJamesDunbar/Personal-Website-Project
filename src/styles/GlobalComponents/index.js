@@ -33,7 +33,7 @@ export const Section = styled.section`
   box-sizing: content-box;
   position: relative;
   vertical-align: middle;
-  overflow: hidden;
+  overflow-y: scroll;
   grid-template-columns: 1fr 1fr;
   ${(props) => {
     if (props.indentbase) {
@@ -108,7 +108,7 @@ export const BgContainer = styled.div`
   margin: auto;
   width: 100%;
   height: 100%;
-  max-height 100vh;
+  max-height: 100vh;
 `;
 
 export const Structure = styled.div`
@@ -143,11 +143,12 @@ export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   padding-top: 5px;
+  
   width: fit-content;
+  overflow: visible;
   max-width: 100%;
-;
   background: linear-gradient(to right top, #6b3d91, #813993, #963492, #ab2c8e, #bf2188, #d0157f, #de0674, #eb0068, #f60456, #fd1b42, #ff322a, #ff4700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

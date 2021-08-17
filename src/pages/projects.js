@@ -7,7 +7,6 @@ const ProjectsPage = () => {
     <Layout>
       <Section indentbase>
         <ScrollContainer>
-          
             <Structure vindent>&lt;html&gt;<br/></Structure>
             <Structure indent>&lt;body&gt;<br/><br/></Structure>
             <Projects/>
