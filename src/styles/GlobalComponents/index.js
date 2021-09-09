@@ -117,7 +117,6 @@ export const Structure = styled.div`
   color: #515152;
   padding-top: ${(props) => props.vindent ? '2rem' : '0'};
   padding-bottom: ${(props) => props.vbindent ? '2rem' : '0'};
-  
   ${(props) => {
     if (props.indent) {
       return `
@@ -141,9 +140,9 @@ export const Structure = styled.div`
 
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  font-size: ${(props) => props.main ? '65px' : '56px'};
-  line-height: ${(props) => props.main ? '72px' : '56px'};
-  padding-bottom: 15px;
+  font-size: ${(props) => props.main ? '65px' : '75px'};
+  line-height: ${(props) => props.main ? '72px' : '80px'};
+  padding-bottom: 25px;
   padding-top: 5px;
   
   width: fit-content;

@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: 'Covi-Tracker',
+    title: 'CoviTracker',
     description: "This project uses Python to build a full-stack Covid-19 data tracking app. The front-end for this application uses Flask, ChartJS and Bootstrap to create a simple, user friendly web application. The back-end for this app, also build in Python collects, cleans and stores up-to-date Covid-19 data using beautifulsoup, pandas and sqlite3.",
     image: '/images/1.png',
     tags: ['Python', 'Flask', 'Bootstrap', 'SQL'],
@@ -9,19 +9,19 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'Flask Blog App',
+    title: 'Flask Blog',
     description:"This app explores the concept of a simple, fully-stacked blogging app like twitter. Built in Python Flask, this app handles user registration, login and password-reset processes, as well as user content creation. SQL query handling and hashed secure password handling are demonstrated in this project.",
     image: '/images/2.png',
-    tags: ['Python', 'Flask', 'Bootstrap', 'SQL'],
+    tags: ['Python', 'wtForms', 'Bootstrap', 'SQLite3'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 1,
   },
   {
-    title: 'ReactJS Portfolio Template',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-      image: '/images/3.jpg',
-      tags: ['React', 'WebRTC'],
+    title: 'React Portfolio',
+    description: "This is a code repository for the site you're currently on! This site was built using React, Next.js, Styled Components and JavaScript, to bring you a clean, dynamic and fun portfolio site. The code for this is open to the public on my Github, you can find the link below. I do hope you enjoy your stay, and that this site aptly demonstrates my abilities as a web developer.",
+      image: '/images/3.png',
+      tags: ['React', 'JavaScript', 'Next.js'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 2,

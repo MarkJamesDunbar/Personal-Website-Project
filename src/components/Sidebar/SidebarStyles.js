@@ -1,26 +1,44 @@
 import styled from 'styled-components';
 
 export const SidebarContainer = styled.div`
-  width: 225px;
-  background-color: #181818;
-  display: flex;
-  flex-direction: column;
-  justify-content: between;
+    width: 225px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: between;
+    @media ${(props) => props.theme.breakpoints.sm} {
+        width: 100px;
+    }
+    @media ${(props) => props.theme.breakpoints.md} {
+        width: 150px;
+    }
 `;
 
 export const Img = styled.img`
-  width: 225px;
-  height: 200px;
-  object-fit: cover;
-  overflow: none;
-  margin-top: 30px;
-  margin-bottom: 70px;
+    width: 225px;
+    height: 200px;
+    object-fit: cover;
+    overflow: none;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    @media ${(props) => props.theme.breakpoints.sm} {
+        width: 100px;
+    }
+    @media ${(props) => props.theme.breakpoints.md} {
+        width: 150px;
+    }
 `
 
 export const SidebarList = styled.ul`
     height: auto;
     padding: 0;
     width: 225px;
+    @media ${(props) => props.theme.breakpoints.sm} {
+        width: 100px;
+    }
+    @media ${(props) => props.theme.breakpoints.md} {
+        width: 150px;
+    }
 `;
 
 export const SidebarRow = styled.li`
@@ -53,6 +71,7 @@ export const SidebarIcon = styled.div`
 export const SidebarTitle = styled.div`
     flex: 70%;
     font-size: 13pt;
+    font-weight: 500;
 `;
 
 export const SocialIcons = styled.a`

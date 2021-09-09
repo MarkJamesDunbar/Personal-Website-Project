@@ -6,7 +6,7 @@ import { projects } from '../../constants/constants';
 const Projects = () => (
   <Section id="projects" nopaddingtop>
     <Structure>&lt;h1&gt;</Structure>
-    <SectionTitle main struct>Projects.</SectionTitle>
+    <SectionTitle struct>Projects.</SectionTitle>
     <Structure>&lt;/h1&gt;</Structure>
     <GridContainer>
       {projects.map(({id, image, title, description, tags, source, visit}) => (

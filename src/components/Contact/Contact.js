@@ -3,7 +3,7 @@ import { Section, SectionText, SectionTitle, Structure } from '../../styles/Glob
 import { LeftSection } from './ContactStyles';
 
 const Contact = () => (
-  <Section contact row middle main indent nopaddingtop>
+  <Section contact row middle indent nopaddingtop>
     <LeftSection indent>
     <Structure>&lt;h1&gt;</Structure>
     <SectionTitle center struct >

@@ -9,7 +9,7 @@ const Hero = () => (
     <LeftSection indent>
       <Structure>&lt;h1&gt;</Structure>
       <SectionTitle center struct >
-        Me, Myself&nbsp;<br/> & I.
+        Me, Myself <br/> & I.
       </SectionTitle>
       <Structure>&lt;/h1&gt; <br/><br/><br/><br/></Structure>
       <Structure>&lt;p&gt;</Structure>
@@ -22,8 +22,9 @@ const Hero = () => (
         <br/>
         Interested in the entire web development spectrum and working on new, ambitious projects with positive, driven people.
         <br/>
-        Sound interesting?
         <br/>
+        <br/>
+        Sound interesting?
         <br/>
         <Anchor href='contact'>
           Let's work together
