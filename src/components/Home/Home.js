@@ -1,10 +1,10 @@
 import React from 'react';
 import { Section, SectionText, SectionTitle, Structure } from '../../styles/GlobalComponents';
-import { LeftSection, Anchor } from './HeroStyles';
+import { LeftSection, Anchor } from './HomeStyles';
 import {motion} from 'framer-motion';
 
 
-const Hero = () => (
+const Home = () => (
   <Section contact row middle main indent nopaddingtop>
     <LeftSection indent>
       <Structure>&lt;h1&gt;</Structure>
@@ -33,9 +33,10 @@ const Hero = () => (
       </SectionText>
       <br/>
       <Structure>&lt;/p&gt;</Structure>
+      <br/>
     </LeftSection>
 
   </Section>
 );
 
-export default Hero;
+export default Home;

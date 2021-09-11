@@ -1,4 +1,4 @@
-import Hero from '../components/Hero/Hero';
+import Home from '../components/Home/Home';
 import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
 import { Layout } from '../layout/Layout';
 import { Section, Structure, Box2, ScrollContainer } from '../styles/GlobalComponents';
@@ -11,7 +11,7 @@ const HomePage = () => {
           <Box2>
             <Structure vindent>&lt;html&gt;<br/></Structure>
             <Structure indent>&lt;body&gt;<br/><br/></Structure>
-            <Hero />
+            <Home />
             <Structure indent>&lt;/body&gt;<br/></Structure>
             <Structure>&lt;/html&gt;</Structure> 
           </Box2>
