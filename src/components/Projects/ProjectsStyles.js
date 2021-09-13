@@ -43,31 +43,35 @@ export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-
+  padding-top 20px;
+  font-family: 'Permanent Marker';
+  color: #FFFFFFBF;
+  font-size: 2.5rem;
 `;
 
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: #FFFFFFBF;
   padding: .5rem 0;
+  margin-top 20px;
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
 
 export const Hr = styled.hr`
-  width: 50px;
-  height: 3px;
+  width: 65%;
+  height: 2px;
   margin: 20px auto;
   border: 0;
-  background: #d0bb57;
+  background: #FFFFFFBF;
 `;
 
 export const Intro = styled.div`
   width: 170px;
   margin: 0 auto;
   color: #dce3e7;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-size: 13px;
   font-style: italic;
   line-height: 18px;
@@ -101,7 +105,7 @@ color:#d4c0c0;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
 background: #6b3030;
-border-radius: 15px;
+border-radius: 5px;
 transition: 0.5s;
 &:hover{
   background: #801414;

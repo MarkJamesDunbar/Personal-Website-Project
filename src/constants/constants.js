@@ -19,21 +19,12 @@ export const projects = [
   },
   {
     title: 'React Portfolio',
-    description: "This is a code repository for the site you're currently on! This site was built using React, Next.js, Styled Components and JavaScript, to bring you a clean, dynamic and fun portfolio site. The code for this is open to the public on my Github, you can find the link below. I do hope you enjoy your stay, and that this site aptly demonstrates my abilities as a web developer.",
+    description: "This is the site you're currently on! This site was built using React, Next.js, Styled Components and JavaScript, to create a clean, dynamic and fun portfolio site. The code for this is open to the public on my Github, you can find the link below. I do hope you enjoy your stay, and that this site demonstrates my abilities as a web developer.",
       image: '/images/3.png',
       tags: ['React', 'JavaScript', 'Next.js'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 2,
-  },
-  {
-    title: 'Unichat',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 3,
   },
 ];
 
