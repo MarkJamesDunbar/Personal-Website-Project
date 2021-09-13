@@ -13,7 +13,7 @@ export const SidebarData = [
         link: '/projects'
     },
     {
-        title: "Technologies",
+        title: "Tech",
         icon: <FaProjectDiagram/>,
         link: '/tech'
     },
