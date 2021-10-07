@@ -6,7 +6,7 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 const Technologies = () =>  (
   <Section id="tech" nopaddingtop>
     <Structure>&lt;h1&gt;</Structure>
-      <SectionTitle struct>Technologies.</SectionTitle>
+      <SectionTitle struct>Technologies&nbsp;</SectionTitle>
     <Structure>&lt;/h1&gt;</Structure>
     <Structure>&lt;p&gt;</Structure>
       <SectionText struct>

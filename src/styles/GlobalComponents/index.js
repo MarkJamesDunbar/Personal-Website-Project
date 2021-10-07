@@ -25,7 +25,7 @@ export const Section = styled.section`
   align-items: ${(props) => props.middle ? "center" : "strech"};
   padding-top: ${(props) => props.nopaddingtop ? "0" : "32px"};
   min-height: ${(props) => props.main ? "calc(100vh - 115px);" : "87vh"};
-
+  
   padding-bottom: 0;
   margin: 0;
   justify-content: center;
@@ -144,11 +144,11 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => props.main ? '72px' : '80px'};
   padding-bottom: 25px;
   padding-top: 5px;
-  
   width: fit-content;
   overflow: visible;
   max-width: 100%;
-  background: linear-gradient(to right top, #6b3d91, #813993, #963492, #ab2c8e, #bf2188, #d0157f, #de0674, #eb0068, #f60456, #fd1b42, #ff322a, #ff4700);
+  //background: linear-gradient(to right top, #6b3d91, #813993, #963492, #ab2c8e, #bf2188, #d0157f, #de0674, #eb0068, #f60456, #fd1b42, #ff322a, #ff4700);
+  background: #FFFFFFBF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;

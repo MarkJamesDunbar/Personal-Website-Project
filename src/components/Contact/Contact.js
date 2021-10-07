@@ -7,7 +7,7 @@ const Contact = () => (
     <LeftSection indent>
     <Structure>&lt;h1&gt;</Structure>
     <SectionTitle center struct >
-        Contact me.  <br/>
+        Contact me&nbsp;  <br/>
     </SectionTitle>
     <br/>
     <Structure>&lt;/h1&gt; <br/> <br/></Structure>

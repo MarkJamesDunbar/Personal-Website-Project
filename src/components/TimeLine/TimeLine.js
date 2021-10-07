@@ -45,12 +45,12 @@ const Timeline = () => {
   return (
     <Section id="about" nopaddingtop>
         <Structure>&lt;h1&gt;</Structure>
-        <SectionTitle struct>My History.</SectionTitle>
+        <SectionTitle struct>My Timeline&nbsp;</SectionTitle>
         <Structure>&lt;/h1&gt; <br/><br/><br/><br/></Structure>
         
         <Structure>&lt;p&gt;</Structure>
         <SectionText struct>
-          From physics & data science, to web development and testing, I hold a rich and varied taste of the coding world... 
+          From a background in physics & maths, to software development and programming - I have a rich and varied set of skills at my disposal.
         </SectionText>
         <Structure>&lt;/p&gt;</Structure>
 
@@ -62,6 +62,7 @@ const Timeline = () => {
             {TimeLineData.map((item, index) => (
               <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
                 <CarouselItem
+                  item={item}
                   index={index}
                   id={`carousel__item-${index}`}
                   active={activeItem}

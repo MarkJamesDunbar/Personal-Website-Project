@@ -12,7 +12,7 @@ const data = [
 const Acomplishments = () => (
   <Section nopaddingtop>
       <Structure>&lt;h1&gt;</Structure>
-      <SectionTitle struct> My Achievements. </SectionTitle>
+      <SectionTitle struct> My Achievements&nbsp;</SectionTitle>
       <Structure>&lt;/h1&gt;</Structure>
       <Boxes>
         {data.map((card, index) => (
